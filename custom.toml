@@ -157,8 +157,9 @@ console_title_template = '{{ .UserName }}@{{ .HostName }} in {{ .PWD }}'
     style = 'powerline'
     powerline_symbol = ''
     invert_powerline = true
-    foreground = '#d3d7cf'
+    foreground = '#00ff00'
     background = '#000000'
+    foreground_templates = ['{{ if gt .Code 0 }}#d3d7cf{{ end }}']
     background_templates = ['{{ if gt .Code 0 }}#cc2222{{ end }}']
     template = ' {{ if gt .Code 0 }}{{ reason .Code }}{{ else }}{{ end }} '
 
